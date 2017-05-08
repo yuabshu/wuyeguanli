@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<title>Jquery Mobile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/page.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<link href="js/css/mobiscroll.custom-2.5.0.min.css" rel="stylesheet" type="text/css" />
+	<script src="js/js/mobiscroll.custom-2.5.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/bmob-min.js"></script>
+	<script type="text/javascript" src="js/bmob.js"></script>
+	<script type="text/javascript" src="js/baoxiu.js"></script>
+
+<style>
+	
+</style>
+</head>
+<body>
+
+<div data-role="page" id="page7">
+	<div data-role="header" class="header" data-position="fixed">
+		<a href="page.html" data-ajax="false"  class="ui-btn ui-icon-carat-l  ui-btn-left  ui-btn-icon-notext ui-shadow ui-corner-all">back</a>
+		<h1>报修投诉</h1>
+		
+	</div>
+	<div data-role="main" class="content">
+		<div data-role="navbar" id="navbar">
+			<ul>
+				<li id="bao"><a class="ui-btn-active ui-state-persist" >报修</a></li>
+				<li id="tou"><a>投诉</a></li>
+			</ul>
+		</div>
+
+		<form method="post" action=""  id="theB">
+			<div data-role="fieldcontain">
+			  <fieldset class="ui-field-contain">
+  				<label for="yuyue">预约日期：</label>
+      			<input type="text" data-role="datebox" data-clear-btn="true"  id="yuyue" name="yuyue" />
+      		  </fieldset>
+      		  <fieldset class="ui-field-contain">
+      			<label for="baoxiu">报修类型：</label>    					
+        		<input type="text" name="baoxiu" id="baoxiu" data-clear-btn="true">
+        	  </fieldset>
+        	  <fieldset class="ui-field-contain">
+        	   <div class="buttonall">
+        		<a href="#popok" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-position-to="window">报修</a>
+        	   </div>
+        	  </fieldset>
+				<div data-role="popup" id="popok" class="poppay">
+					<p>报修成功，点击确定返回...</p>
+					<div class="buttonall">
+						<a href="#page7" data-role="button" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">确认</a>
+					</div>
+				</div>
+			</div>
+	  	</form>
+	  	<form method="post" action="" id="theT" style="display: none;">
+			<div data-role="fieldcontain">
+			  <fieldset class="ui-field-contain">
+  				<label for="tousu">投诉类型：</label> 
+        		<input type="text" name="tousu" id="tousu" data-clear-btn="true">
+        	  </fieldset>
+        	  <fieldset class="ui-field-contain">
+        	   <div class="buttonall">
+        		<a href="#popok1" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-position-to="window">投诉</a>
+        	   </div>
+        	  </fieldset>
+				<div data-role="popup" id="popok1" class="poppay">
+					<p>投诉成功，点击确定返回...</p>
+					<div class="buttonall">
+						<a href="#theT" data-role="button" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">确认</a>
+					</div>
+				</div>
+				</div>
+	  	</form>
+	</div>
+</div>
+</body>
+</html>

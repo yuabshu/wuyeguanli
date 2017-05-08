@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/page.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<link href="js/css/mobiscroll.custom-2.5.0.min.css" rel="stylesheet" type="text/css" />
+	<script src="js/js/mobiscroll.custom-2.5.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        $(function () {
+        /*公告*/
+        $('#fangdao').click(function(){
+        		$('#page10 #zhuyao').text('根据小区居民举报，最近经常丢失东西，希望广大居民注意最近防盗工作，以免丢失财物等。');
+        	});
+        $('#laji').click(function(){
+        		$('#page10 #zhuyao').text("垃圾清理垃圾清理垃圾清理垃圾清理垃圾清理垃圾清理垃圾清理垃圾清理垃圾清理垃圾清理。");
+        	})
+        $('#dianti').click(function(){
+        		$('#page10 #zhuyao').text("电梯故障通知电梯故障通知电梯故障通知电梯故障通知电梯故障通知电梯故障通知电梯故障通知。");        		
+        	})
+        $('#tingshui').click(function(){
+        		$('#page10 #zhuyao').text("由于水管维修本周四上午十点到十二点将会进行大面积的停水，请大家做好停水方面的相应准备。");        		
+        	})
+        $('#yezhu').click(function(){
+        		$('#page10 #zhuyao').text("办理业主信息办理业主信息办理业主信息办理业主信息办理业主信息办理业主信息办理业主信息。");        		
+        	});
+        /*公告完成*/
+
+        
+
+
+       /* document.addEventListener("backbutton", onBackKeyDown, false);			  
+			function onBackKeyDown() {			     
+			        navigator.app.exitApp();*/			    
+	
+        });
+    </script>
+
+
+</head>
+<body>
+	<!-- 通知公告 -->
+<div data-role="page" id="page9">
+	<div data-role="header" class="header" data-position="fixed">
+	    <a href="page.html" data-ajax="false" class="ui-btn ui-icon-carat-l  ui-btn-left  ui-btn-icon-notext ui-shadow ui-corner-all">back</a>
+		<h1>通知公告</h1>
+	
+	</div>
+	<div data-role="main" class="content">
+		<form class="ui-filterable">
+			<input id="theNotiice" data-type="search" placeholder="搜索">
+		</form>
+		<ul data-role="listview" data-filter="true" data-input="#theFilter" data-autodividers="false" data-inset="true">
+			<li id="fangdao"><a href="#page10"><img src="images/new.jpg" alt="new" class="ui-li-icon" />防盗友情提示[5-20]</a></li>
+			<li id="laji"><a href="#page10"><img src="images/new.jpg" alt="new" class="ui-li-icon" />关于垃圾清运通知[5-12]</a></li>
+			<li id="dianti"><a href="#page10"><img src="images/new.jpg" alt="new" class="ui-li-icon" />电梯故障通知[5-01]</a></li>
+			<li id="tingshui"><a href="#page10"><img src="images/new.jpg" alt="new" class="ui-li-icon" />关于大面积停水通知[4-15]</a></li>
+			<li id="yezhu"><a href="#page10"><img src="images/new.jpg" alt="new" class="ui-li-icon" />小区关于办理业主卡通知[2-15]</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div data-role="page" id="page10">
+	<div data-role="header" class="header" data-position="fixed">
+		<a href="#page9" class="ui-btn ui-icon-carat-l  ui-btn-left  ui-btn-icon-notext ui-shadow ui-corner-all">back</a>
+		<h1>公告详情</h1>
+	</div>
+	<div data-role="main" class="content" >
+		<p>尊敬的客户：</p>
+		<p id="zhuyao">由于水管维修本周四上午十点到十二点将会进行大面积的停水，请大家做好停水方面的相应准备。</p>
+	</div>
+</div>
+
+<!-- 通知公告完成-->
+
+</body>
+</html>

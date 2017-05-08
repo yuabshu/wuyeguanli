@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 
+	<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css">
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script> 
+  <script type="text/javascript" src="js/bmob-min.js"></script>
+  <script type="text/javascript" src="js/bmob.js"></script>
+  <script type="text/javascript" src="js/geren.js"></script>	
+<style>
+	.tijiao{
+		text-align: center;
+	}
+  a{
+    text-decoration: none;
+  }
+  #yonghu p{
+      color: #000;
+      width:100%;
+      height:30px;
+      padding-left: 10px;
+      line-height:30px;
+      background: #DEFFAC;
+      /* opacity: 0.5; */
+  }
+  #yonghu a{
+    background: #DEFFAC;
+    /* opacity: 0.5; */
+    color:#000;
+  }
+</style>
+</head>
+<body>
+<div data-role="page" id="pagefour" >
+
+		<div data-role="header" style="background: #025543;color: #fff;">
+		  <a href="page.html" data-ajax="false" class="ui-btn ui-icon-carat-l  ui-btn-left  ui-btn-icon-notext ui-shadow ui-corner-all">back</a>
+
+			<h1>个人中心</h1>
+        
+		</div>
+
+		<div data-role="main" class="ui-content" id="yonghu">
+			<p></p><br>
+			<p></p><br>
+			<p></p><br>
+			<p></p><br>
+			<a href="#pagefive" data-role="button" data-transition="pop">修改</a>
+		</div>
+					
+		
+</div>
+
+
+<div data-role="page" id="pagefive">
+		<div data-role="header" style="background: #025543;color: #fff;">
+		  <a href="page.html" data-ajax="false" class="ui-btn ui-icon-carat-l  ui-btn-left  ui-btn-icon-notext ui-shadow ui-corner-all">back</a>
+			<h1>个人中心</h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			
+			<form method="post" action="demo_form.asp">
+        <div class="ui-field-contain">
+
+             <label for="fname">业主姓名：</label>
+             <p id="fname"></p>
+
+              <label for="num">联系电话：</label>
+             <input type="date" name="num" id="phonenum">              
+              
+             
+
+             	<fieldset data-role="controlgroup" data-type="horizontal">
+             		<legend>具体住址：</legend>
+             		<label for="day">单元号：</label>
+             		<select name="day" id="day">
+             			<option value="1">一单元</option>
+             			<option value="2">二单元</option>
+             			<option value="3">三单元</option>
+             			<option value="4">四单元</option>
+                  <option value="5">五单元</option>
+                  <option value="6">六单元</option>
+             		</select>
+             		<label for="num">门牌号：</label>
+             		<select name="num" id="num">
+             			<option value="001">101</option>
+             			<option value="001">102</option>             			
+             			<option value="002">201</option>
+                  <option value="002">202</option>                        
+                  <option value="003">301</option>
+                  <option value="003">302</option>                        
+                  <option value="004">401</option>
+             			<option value="004">402</option>             			
+             			<option value="005">501</option>
+             			<option value="005">502</option>             			
+             			<option value="006">601</option>
+             			<option value="006">602</option>
+                </select>
+             	</fieldset>
+        </div> 
+      </form>
+      <div class="tijiao">
+        <a href="#tiaozhuan"><input type="submit" data-inline="true" value="提交"></a>
+      </div>
+		</div>
+</div>
+</div>   
+</body>
+</html>

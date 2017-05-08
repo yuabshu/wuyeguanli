@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录注册</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<link rel="stylesheet" type="text/css" href="css/login_regist.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/bmob-min.js"></script>
+	<script type="text/javascript" src="js/bmob.js"></script>
+	
+	<script type="text/javascript" src="js/login_regist.js"></script>
+
+</head>
+<body>
+	<div data-role="page"  id="page1">
+		<div data-role="main" class="content">	
+		    <div class="welcom">
+		    	<img src="images/welcom.jpg" alt="welcome"/>
+		    </div>  
+			<form method="post" action=" " >
+			    <div class="ui-field-contain">
+				    <input type="text" name="name" id="name" data-inline="true" data-clear-btn="true" placeholder="请输入姓名.." />
+
+	            </div>
+	            <div class="ui-field-contain">
+				    <input type="password" name="password" id="password" data-clear-btn="true" data-inline="true" placeholder="请输入密码.." />
+				    <!-- <p class="yanzheng">*密码不能小于6位字符</p> -->
+				</div>
+				<div class="buttonall">
+				    <a id="login" data-ajax="false" data-role="button" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">登录</a>
+				    <a href="#pagetwo" data-role="button" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">注册</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div data-role="page" id="pagetwo" >
+		<div data-role="header" class="header">
+			<h1>欢迎</h1> 
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<form method="post" action="demoform.php">
+				<input type="text" name="fname" id="fname" placeholder="请设置用户名..." data-clear-btn="true">
+				<input type="password" name="password" id="password1" placeholder="请设置密码...">
+				<p class="warn"></p>
+				<input type="password" name="passwordag" class="passwordag" placeholder="再次确认密码">
+				<input type="text" name="text" id="text" placeholder="手机...">
+				<fieldset id="sex" data-role="controlgroup">
+				      <!-- <legend>性别：</legend> -->
+		              <label for="male">先生</label>
+		              <input type="radio" name="gender" id="male" value="男" data-type="mini">
+		              <label for="female">女士</label>
+		              <input type="radio" name="gender" id="female" value="女" data-type="mini">
+				</fieldset>
+				
+	            <fieldset data-role="controlgroup" data-type="horizontal">
+             		<!-- <legend>具体住址：</legend> -->
+             		<select name="day" id="day">
+             			<option value="1">一单元</option>
+             			<option value="2">二单元</option>
+             			<option value="3">三单元</option>
+             			<option value="4">四单元</option>
+                        <option value="5">五单元</option>
+                        <option value="6">六单元</option>
+             		</select>
+
+             		<select name="num" id="num">
+             			<option value="1">101</option>
+             			<option value="1">102</option>         			
+             			<option value="2">201</option>
+                        <option value="2">202</option>
+                        <option value="3">301</option>
+                        <option value="3">302</option>                  
+                        <option value="4">401</option>
+             			<option value="4">402</option>         			
+             			<option value="5">501</option>
+             			<option value="5">502</option>         			
+             			<option value="6">601</option>
+             			<option value="6">602</option>            			
+             		</select>
+             	</fieldset>
+				
+			</form>			
+		</div>
+		<div id="zhuce">
+	        <a data-ajax="false" data-role="button">注册</a>
+	    </div>
+	</div>
+</body>
+</html>

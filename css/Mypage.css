@@ -1,0 +1,88 @@
+html,body{
+    overflow: scroll;
+    overflow-x:hidden; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#hh{      
+     
+    text-align: center;
+    background: #025543;
+    height:40px;
+    line-height: 40px;
+    color: #fff;
+    margin: 0;
+
+        }
+#main li{
+    padding-top: 5px;
+    float:left;
+    list-style-type:none;
+    width:25%;
+    text-align:center;
+    line-height:40px;
+}  
+
+.container{
+    background: #E5F6E8;
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+}
+.footer1{
+    /*margin-top: 100px;*/
+    position: fixed; 
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+.flex-item{
+    flex: 1;
+}
+.hr{       
+    margin:170px 0 auto;
+    height: 4px;
+    background: #E5F5F7;
+    width: 100%;
+}
+.title{
+    height:35px;
+    border:1px solid #E8E8E8;
+    }
+.title_left{
+    width:70%;
+    font-family:"方正兰亭黑简体";
+    font-size:14px;
+    font-weight:bold;
+    color:#786F66;
+    float:left;
+    line-height:35px;
+    padding-left:20px;
+}
+.title_right{
+    width:20%;
+    float:right;
+    line-height:35px;
+    text-align:right;
+    padding-right:10px;
+}
+.title_right a{
+    text-decoration:none;
+    color:#786F66;
+}
+.pic_news{
+
+    margin-top:10px;
+    line-height:22px;
+}
+.pic_news img,.course_pic img{
+    float:left;
+    /*padding-bottom: 100px;*/
+    margin:0 20px;
+}
+.pic_news a,.course_pic a{
+    color:#99C329;
+    text-decoration:none;
+}
